@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>FT MATH 🧮</title>
+    <style>
+        body { font-family: Arial, sans-serif; background: linear-gradient(135deg, #4e9fe5 0%, #4e9fe5 100%); background-size: 600% 600%; animation: gradientShift 20s ease infinite; color: #e0e0ff; text-align: center; padding: 50px; min-height: 100vh; } }
+        @keyframes gradientShift { 0% { background-position: 0% 50%; } 50% { background-position: 100% 50%; } 100% { background-position: 0% 50%; } }
+        h1 { font-size: 3em; text-shadow: 2px 2px 4px rgba(0,0,0,0.5); }
+        .result { background: rgba(255,255,255,0.1); padding: 20px; border-radius: 15px; margin: 20px auto; max-width: 600px; }
+        .inf { font-size: 2em; color: #ff4444; font-weight: bold; }
+        button { background: #ff6b35; color: white; border: none; padding: 15px 30px; font-size: 18px; border-radius: 25px; cursor: pointer; }
+        button:hover { background: #e55a2b; }
+        .code { background: rgba(0,0,0,0.3); padding: 20px; border-radius: 10px; font-family: monospace; max-height: 300px; overflow: auto; }
+        .razor { font-size: 1.3em; margin: 20px; }
+    </style>
+<style>
+<style>
+/* TRISEUM COSMIC BACKGROUND v1 */
+body { 
+  margin: 0; 
+  background: #0a0a1f; 
+  overflow-x: hidden;
+  font-family: 'Courier New', monospace;
+}
+
+.hero-section {
+  height: 100vh;
+  background: 
+    radial-gradient(ellipse at bottom, #1a0033 0%, transparent 70%),
+    radial-gradient(ellipse at top, #ff00ff20 0%, transparent 70%),
+    linear-gradient(45deg, #0a0a2a 0%, #1a0033 50%, #2a0e5a 100%);
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.hero-section::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-image: 
+    radial-gradient(circle at 20% 80%, #00ff8820 0%, transparent 50%),
+    radial-gradient(circle at 80% 20%, #ffaa0020 0%, transparent 50%),
+    radial-gradient(circle at 40% 40%, #8a2be220 0%, transparent 50%);
+  animation: particleFloat 20s infinite linear;
+}
+
+@keyframes particleFloat {
+  0%, 100% { transform: translateY(0px) scale(1); }
+  50% { transform: translateY(-20px) scale(1.1); }
+}
+
+.hero-title {
+  text-align: center;
+  color: #00ff88;
+  text-shadow: 0 0 30px #00ff88;
+  z-index: 10;
+  animation: glow 3s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+  from { text-shadow: 0 0 20px #00ff88, 0 0 30px #00ff88; }
+  to { text-shadow: 0 0 30px #00ff88, 0 0 50px #00ff88, 0 0 60px #00ff88; }
+}
+
+.calibrator-card {
+  margin: 40px auto;
+  max-width: 900px;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.5);
+  transition: transform 0.3s ease;
+}
+.calibrator-card:hover {
+  transform: translateY(-10px);
+}
+
+
+/* FTEL SPACESHIP NAVIGATION */
+.ftel-nav {
+    background: rgba(0, 0, 0, 0.9);
+    backdrop-filter: blur(20px);
+    border-bottom: 2px solid #00bfff;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 20px rgba(0, 191, 255, 0.3);
+}
+
+.nav-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    gap: 0;
+}
+
+.nav-link {
+    color: #00bfff !important;
+    text-decoration: none;
+    padding: 15px 25px;
+    font-family: 'Courier New', monospace;
+    font-weight: 900;
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    position: relative;
+    transition: all 0.3s ease;
+    text-shadow: 0 0 10px rgba(0, 191, 255, 0.5);
+}
+
+.nav-link:hover {
+    background: linear-gradient(90deg, #00bfff, #1e90ff);
+    color: white !important;
+    box-shadow: 0 0 20px rgba(0, 191, 255, 0.6);
+    transform: translateY(-2px);
+}
+
+.nav-link.active {
+    background: linear-gradient(90deg, #00bfff, #1e90ff);
+    color: white !important;
+    box-shadow: 0 0 25px rgba(0, 191, 255, 0.8);
+}
+
+/* MOBILE RESPONSIVE */
+@media (max-width: 768px) {
+    .nav-container {
+        flex-direction: column;
+        gap: 0;
+    }
+    .nav-link {
+        padding: 12px 20px;
+        font-size: 14px;
+        border-bottom: 1px solid rgba(0, 191, 255, 0.3);
+    }
+}
+
+
+</style>
+</head>
+<body>
+<!-- FTEL TOP NAVIGATION -->
+<nav class="ftel-nav">
+    <div class="nav-container">
+        <a href="index.html" class="nav-link">🌌 Universe</a>
+        <a href="earth.html" class="nav-link">🌍 Earth</a>
+        <a href="bio.html" class="nav-link">🧬 Bio</a>
+        <a href="math.html" class="nav-link active">🧮 Math</a>
+        <a href="about.html" class="nav-link">ℹ️ About</a>
+    </div>
+</nav>
+
+
+<!-- 🌌 MILKY WAY HERO - WORKING -->
+<style>
+.hero-section {
+  height: 100vh;
+  background-image: url('https://images.unsplash.com/photo-1770719269462-d3c1ed7e184f?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.hero-section::before {
+  content: '';
+  position: absolute; top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(10,10,40,0.65);
+}
+.hero-title {
+  text-align: center;
+  color: #00ff88;
+  font-family: monospace;
+  text-shadow: 0 0 40px #00ff88;
+  z-index: 10;
+}
+</style>
+
+<div class="hero-section">
+  <div class="hero-title">
+    <!-- BLUE CALCULATOR FONT VERSION (KEEP THIS) -->
+    <h1 style="font-family: 'Courier New', 'LCDMono', monospace; font-size: 6vw; margin: 0; letter-spacing: 8px; color: #ffffff; text-shadow: 0 0 20px rgba(0,191,255,0.8); font-weight: 900;">FINE TUNING ENGINEERING LABS</h1>
+    
+    <!-- YELLOW BACKUP VERSION (DELETE LATER) -->
+    <!-- <h1 style="font-family: 'Courier New', monospace; font-size: 6vw; margin: 0; letter-spacing: 8px; color: #ffaa00; text-shadow: 0 0 30px #ffaa00; font-weight: 900;">FINE TUNING ENGINEERING LABS</h1> -->
+    
+    <h2 style="font-size: 3vw; color: #ffaa00; margin: 20px 0; text-shadow: 0 0 30px #ffaa00;">MATH LAB</h2>
+    <p style="font-size: 1.8vw; color: white;">V1.0</p>
+  </div>
+</div>
+
+
+<div style="max-width: 1200px; margin: 0 auto; padding: 20px;">
+
+<div style="max-width: 1200px; margin: 0 auto; padding: 20px;">
+<div class="math-box" style="background: #fff8e6; margin: 30px 0; padding: 40px; border-radius: 20px; box-shadow: 0 15px 40px rgba(255,193,7,0.3); border-top: 5px solid #ffc107;">
+    
+    <h1 style="color: #1e3a8a; text-align: center; font-size: 32px; margin: 0 0 20px 0;"> MATHEMATICAL PROBABILITY</h1>
+
+
+<p style="color: #1e3a8a; text-align: center; font-size: 20px; line-height: 1.7; max-width: 800px; margin: 0 auto 30px;">
+         
+Here at FTEL we like to share knowledge. Our FTEL pages are built for illustration purposes as the Math is complex for an online simulator and would take the  user a non friendly time to compute.
+We have used the power of Python to calculate the odds with the following code below were you can test it for yourself.
+        </p>
+
+<p style="color: #1e3a8a; text-align: center; font-size: 20px; line-height: 1.7; max-width: 800px; margin: 0 auto 30px;">
+            <strong>"Why Python?."</strong>
+We use Python for its powerful libraries (NumPy) that can handle complex calculations. It is clean and intuitive code makes it ideal for scientific and engineering reasearch.
+        </p>
+
+<p style="color: #1e3a8a; text-align: center; font-size: 20px; line-height: 1.7; max-width: 800px; margin: 0 auto 30px;">
+
+We have based our Math on the following formula:
+
+        </p>
+
+<div style="background: #f8f9fa; padding: 30px; border-radius: 15px; border-left: 5px solid #ffc107; margin: 30px 0; text-align: center;">
+    <h3 style="color: #856404; margin: 0 0 20px 0;">📐 FINE-TUNING FORMULA</h3>
+    
+<p style="color: #1e3a8a; text-align: center; font-size: 20px; line-height: 1.7; max-width: 800px; margin: 0 auto 30px;">
+            <strong>"P_total = ∏(i=1 to n) P_i"</strong>
+
+<p style="color: #1e3a8a; text-align: center; font-size: 20px; line-height: 1.7; max-width: 800px; margin: 0 auto 30px;">
+Where:
+<p style="color: #1e3a8a; text-align: center; font-size: 20px; line-height: 1.7; max-width: 800px; margin: 0 auto 30px;">
+P_total   = Combined life-permitting probability
+<p style="color: #1e3a8a; text-align: center; font-size: 20px; line-height: 1.7; max-width: 800px; margin: 0 auto 30px;">
+P_i       = Life-permitting window for constant i
+<p style="color: #1e3a8a; text-align: center; font-size: 20px; line-height: 1.7; max-width: 800px; margin: 0 auto 30px;">
+n         = Number of constants (30+)
+<p style="color: #1e3a8a; text-align: center; font-size: 20px; line-height: 1.7; max-width: 800px; margin: 0 auto 30px;">
+P_total = P_cosmo × P_strong × P_gravity × P_em × ... × P_neutrino_15
+       = (1×10⁻¹²⁰) × (5×10⁻³) × (1×10⁻³) × (3×10⁻³) × ... × (1×10⁻²⁵)
+       = 10<sup>-X</sup> (approx) = 1 in 10<sup>X</sup>
+
+        </p>
+
+
+</div>
+
+
+
+
+<!-- <div style="max-width: 1200px; margin: 0 auto; padding: 20px;">
+<div class="math-box" style="background: #fff8e6; margin: 30px 0; padding: 40px; border-radius: 20px; box-shadow: 0 15px 40px rgba(255,193,7,0.3); border-top: 5px solid #ffc107;"> -->
+    
+
+
+    <!-- TRANSPARENCY CHALLENGE -->
+<!--    <div style="background: #e8f5e8; padding: 25px; border-radius: 15px; border-left: 5px solid #28a745; text-align: center; margin: 30px 0;">
+        <h3 style="color: #28a745; margin: 0 0 15px 0;">🔓 FULL TRANSPARENCY</h3>
+        <p style="color: #1e3a8a; font-size: 18px; font-weight: 500; margin: 0;">
+            <strong>Copy → Run → Change 1 number → Watch universe collapse!</strong>
+        </p>
+        <p style="color: #666; font-size: 16px; margin: 15px 0 0 0; font-style: italic;">
+            <em>Physics literature windows (Barrow, Rees, Penrose). Verify yourself.</em>
+        </p>
+    </div> -->
+
+
+<div style="max-width: 1200px; margin: 0 auto; padding: 20px;">
+<div class="math-box" style="background: #fff8e6; margin: 30px 0; padding: 40px; border-radius: 20px; box-shadow: 0 15px 40px rgba(255,193,7,0.3); border-top: 5px solid #ffc107;">
+    
+    <h1 style="color: #856404; text-align: center; font-size: 32px; margin: 0 0 20px 0;">🧮 RUN IT YOURSELF</h1>
+    
+    <div style="background: #e8f5e8; padding: 25px; border-radius: 15px; border-left: 5px solid #28a745; margin: 30px 0; text-align: center;">
+        <h3 style="color: #28a745; margin: 0 0 15px 0;">🔥 CHALLENGE: Copy → Paste → RUN → See what answer you get!</h3>
+        <p style="color: #1e3a8a; font-size: 18px; font-weight: 500; margin: 0;">
+            <strong>Your PC will calculate the impossibility.</strong>
+        </p>
+    </div>
+
+    <!-- CODE #1 - SIMPLE VERSION (User runs it) -->
+    <div style="background: #2d3748; color: #e2e8f0; padding: 25px; border-radius: 15px; border-left: 5px solid #ffc107; margin: 30px 0; font-family: 'Courier New', monospace;">
+        <h3 style="color: #ffc107; margin: 0 0 20px 0;">🐍 CODE: 10  KEY CONSTANTS</h3>
+        <pre style="margin: 0; font-size: 14px; line-height: 1.6; background: #1a202c; padding: 25px; border-radius: 10px; overflow-x: auto; cursor: pointer;" onclick="copyCode(this)" title="Click to copy!">
+<span style="color: #48bb78;">import numpy as np</span>
+
+<span style="color: #48bb78;">windows</span> = {
+    <span style="color: #f6ad55;">'cosmo_constant'</span>: <span style="color: #f6ad55;">1e-120</span>,
+    <span style="color: #f6ad55;">'strong_force'</span>: <span style="color: #f6ad55;">0.005</span>,
+    <span style="color: #f6ad55;">'gravity'</span>: <span style="color: #f6ad55;">0.001</span>,
+    <span style="color: #f6ad55;">'em_coupling'</span>: <span style="color: #f6ad55;">0.003</span>,
+    <span style="color: #f6ad55;">'weak force'</span>: <span style="color: #f6ad55;">1e-2</span>,
+    <span style="color: #f6ad55;">'Higgs'</span>: <span style="color: #f6ad55;">1e-34</span>,
+    <span style="color: #f6ad55;">'e_mass'</span>: <span style="color: #f6ad55;"> 1e-4</span>,
+    <span style="color: #f6ad55;">'fine_struc'</span>: <span style="color: #f6ad55;">1e-4</span>,
+    <span style="color: #f6ad55;">'entropy'</span>: <span style="color: #f6ad55;">1e-10</span>,
+    <span style="color: #f6ad55;">'density'</span>: <span style="color: #f6ad55;">1e-60</span>,
+
+}
+
+<span style="color: #48bb78;">total_prob</span> = <span style="color: #f6ad55;">np.prod</span>([<span style="color: #f6ad55;">w</span> <span style="color: #a0aec0;">for w in</span> <span style="color: #48bb78;">windows.values</span>()])
+<span style="color: #4299e1;">print</span>(<span style="color: #f7fafc;">f</span><span style="color: #f7fafc;">"Combined Universe permitting odds: 1 in {1/total_prob:.2e}"</span>)
+        </pre>
+        <p style="color: #a0aec0; font-size: 13px; margin: 10px 0 0 0;">
+            <em>Copy → python script.py → Watch your PC CRUNCH 10^X - Solve X to find out!</em>
+        </p>
+    </div>
+
+    <!-- CODE #2 - FULL VERSION (User runs it) -->
+<!--    <div style="background: #2d3748; color: #e2e8f0; padding: 25px; border-radius: 15px; border-left: 5px solid #ffc107; margin: 30px 0; font-family: 'Courier New', monospace;">
+        <h3 style="color: #ffc107; margin: 0 0 20px 0;">🐍 CODE #2: 30+ CONSTANTS (Barrow/Rees)</h3>
+        <pre style="margin: 0; font-size: 13px; line-height: 1.6; background: #1a202c; padding: 25px; border-radius: 10px; overflow-x: auto; cursor: pointer;" onclick="copyCode(this)" title="Click to copy!">
+<span style="color: #48bb78;">import numpy as np</span>
+
+<span style="color: #48bb78;">constants</span> = {
+    <span style="color: #f6ad55;">'cosmo_constant'</span>: <span style="color: #f6ad55;">1e-120</span>,
+    <span style="color: #f6ad55;">'strong_force'</span>: <span style="color: #f6ad55;">5e-3</span>,
+    <span style="color: #f6ad55;">'gravity'</span>: <span style="color: #f6ad55;">1e-3</span>,
+    <span style="color: #f6ad55;">'em_coupling'</span>: <span style="color: #f6ad55;">3e-3</span>,
+    <span style="color: #f6ad55;">'weak_force'</span>: <span style="color: #f6ad55;">1e-2</span>,
+    <span style="color: #f6ad55;">'Higgs_vev'</span>: <span style="color: #f6ad55;">1e-34</span>,
+    <span style="color: #f6ad55;">'proton_neutron'</span>: <span style="color: #f6ad55;">1e-3</span>,
+    <span style="color: #f6ad55;">'fine_struc'</span>: <span style="color: #f6ad55;">1e-4</span>,
+    <span style="color: #f6ad55;">'em_strong_ratio'</span>: <span style="color: #f6ad55;">1e-40</span>,
+    <span style="color: #f6ad55;">'theta_QCD'</span>: <span style="color: #f6ad55;">1e-10</span>,
+    <span style="color: #f6ad55;">'up_down_quark'</span>: <span style="color: #f6ad55;">3e-5</span>,
+    <span style="color: #f6ad55;">'alpha_s'</span>: <span style="color: #f6ad55;">1e-3</span>,
+    <span style="color: #f6ad55;">'baryon_density'</span>: <span style="color: #f6ad55;">1e-10</span>,
+    <span style="color: #f6ad55;">'WIMP_density'</span>: <span style="color: #f6ad55;">1e-4</span>
+}
+<span style="color: #9ca3af;"># +15 neutrino params @ 1e-25</span>
+
+<span style="color: #4299e1;">for i in range</span>(<span style="color: #f6ad55;">15</span>): 
+    <span style="color: #48bb78;">constants</span>[<span style="color: #f7fafc;">f</span><span style="color: #f7fafc;">'neutrino_{i}'</span>] = <span style="color: #f6ad55;">1e-25</span>
+
+<span style="color: #48bb78;">product_odds</span> = <span style="color: #f6ad55;">1/np.prod</span>(<span style="color: #f6ad55;">list</span>(<span style="color: #48bb78;">constants.values</span>()))
+<span style="color: #4299e1;">print</span>(<span style="color: #f7fafc;">f</span><span style="color: #f7fafc;">"30+ params: 1 in {product_odds:.2e}"</span>)
+        </pre>
+        <p style="color: #a0aec0; font-size: 13px; margin: 10px 0 0 0;">
+            <em>Click → Copy → Python → Your PC shows 10²³⁰+ IMPOSSIBILITY!</em>
+        </p>
+    </div> -->
+
+    <!-- EXECUTE CHALLENGE -->
+    <div style="background: #ffebee; padding: 30px; border-radius: 15px; border-left: 5px solid #f44336; text-align: center; margin: 40px 0;">
+        <h3 style="color: #c62828; margin: 0 0 20px 0;">🚀 YOUR TURN</h3>
+        <ol style="color: #1e3a8a; font-size: 18px; text-align: left; max-width: 500px; margin: 0 auto;">
+            <li><strong>Copy code block</strong></li>
+            <li><strong>pip install numpy</strong> (if needed)</li>
+            <li><strong>python fine_tuning.py</strong></li>
+            <li><strong>What does the probabilty tell you?</strong></li>
+        </ol>
+    </div>
+
+<!-- </div>
+</div>
+
+<script>
+function copyCode(element) {
+    const code = element.innerText;
+    navigator.clipboard.writeText(code).then(() => {
+        const original = element.style.cursor;
+        element.style.cursor = 'copy-success';
+        setTimeout(() => element.style.cursor = original, 1000);
+    });
+}
+</script>
+
+<div style="max-width: 1200px; margin: 0 auto; padding: 20px;">
+<div class="math-box" style="background: #fff8e6; margin: 30px 0; padding: 40px; border-radius: 20px; box-shadow: 0 15px 40px rgba(255,193,7,0.3); border-top: 5px solid #ffc107;">
+    
+    <h1 style="color: #856404; text-align: center; font-size: 32px; margin: 0 0 20px 0;">🧮 MONTE CARLO REVEALED</h1>
+    
+    <div style="background: #e8f5e8; padding: 25px; border-radius: 15px; border-left: 5px solid #28a745; margin: 30px 0; text-align: center;">
+        <h3 style="color: #28a745; margin: 0 0 15px 0;">🎲 10 MILLION RANDOM TRIALS → ZERO HITS</h3>
+        <p style="color: #1e3a8a; font-size: 18px; font-weight: 500; margin: 0;">
+            <strong>Your PC runs 10⁷ universes. NONE work. Math PROVES it.</strong>
+        </p>
+    </div>
+
+  <!-- MONTE CARLO CODE #1 -->
+<!--    <div style="background: #2d3748; color: #e2e8f0; padding: 25px; border-radius: 15px; border-left: 5px solid #ffc107; margin: 30px 0; font-family: 'Courier New', monospace;">
+        <h3 style="color: #ffc107; margin: 0 0 20px 0;">🐍 MONTE CARLO: 4 CONSTANTS</h3>
+        <pre style="margin: 0; font-size: 14px; line-height: 1.6; background: #1a202c; padding: 25px; border-radius: 10px; overflow-x: auto; cursor: pointer;" onclick="copyCode(this)" title="Click to copy!">
+<span style="color: #48bb78;">import numpy as np</span>
+
+<span style="color: #48bb78;">windows</span> = {
+    <span style="color: #f6ad55;">'cosmo_constant'</span>: <span style="color: #f6ad55;">1e-120</span>,
+    <span style="color: #f6ad55;">'strong_force'</span>: <span style="color: #f6ad55;">0.005</span>,
+    <span style="color: #f6ad55;">'gravity'</span>: <span style="color: #f6ad55;">0.001</span>,
+    <span style="color: #f6ad55;">'em_coupling'</span>: <span style="color: #f6ad55;">0.003</span>
+}
+
+<span style="color: #9ca3af;"># MONTE CARLO: 10M random universes</span>
+<span style="color: #48bb78;">n_trials</span> = <span style="color: #f6ad55;">10_000_000</span>
+<span style="color: #48bb78;">windows_arr</span> = <span style="color: #f6ad55;">np.array</span>(<span style="color: #f6ad55;">list</span>(<span style="color: #48bb78;">windows.values</span>()))
+<span style="color: #48bb78;">hits</span> = <span style="color: #f6ad55;">0</span>
+
+<span style="color: #9ca3af;"># Generate random universes, check ALL constants hit windows</span>
+<span style="color: #48bb78;">trials</span> = <span style="color: #f6ad55;">np.random.uniform</span>(<span style="color: #f6ad55;">0</span>, <span style="color: #f6ad55;">1</span>, (<span style="color: #48bb78;">n_trials</span>, <span style="color: #f6ad55;">4</span>))
+<span style="color: #48bb78;">hits</span> = <span style="color: #f6ad55;">np.sum</span>(<span style="color: #f6ad55;">np.all</span>(<span style="color: #48bb78;">trials</span> &lt; <span style="color: #48bb78;">windows_arr</span>, axis=<span style="color: #f6ad55;">1</span>))
+
+<span style="color: #48bb78;">prob</span> = <span style="color: #48bb78;">hits</span> / <span style="color: #48bb78;">n_trials</span>
+<span style="color: #4299e1;">print</span>(<span style="color: #f7fafc;">f</span><span style="color: #f7fafc;">"</span>{n_trials:,}<span style="color: #f7fafc;"> trials: </span>{hits}<span style="color: #f7fafc;"> hits (</span>{prob:.2e}<span style="color: #f7fafc;">)"</span>)
+        </pre>
+        <p style="color: #a0aec0; font-size: 13px; margin: 10px 0 0 0;">
+            <em>Result: "10M trials: 0 hits (0.00)" → IMPOSSIBLE!</em>
+        </p>
+    </div>
+
+    <!-- MONTE CARLO CODE #2 - FULL VERSION -->
+<!--    <div style="background: #2d3748; color: #e2e8f0; padding: 25px; border-radius: 15px; border-left: 5px solid #ffc107; margin: 30px 0; font-family: 'Courier New', monospace;">
+        <h3 style="color: #ffc107; margin: 0 0 20px 0;">🐍 MONTE CARLO: 30+ CONSTANTS</h3>
+<pre style="margin: 0; font-size: 13px; line-height: 1.6; background: #1a202c; padding: 25px; border-radius: 10px; overflow-x: auto; cursor: pointer;" onclick="copyCode(this)" title="Click to copy!">
+<span style="color: #48bb78;">constants</span> = { <span style="color: #9ca3af;"># Barrow/Rees 30+ params</span>
+    <span style="color: #f6ad55;">'cosmo_constant'</span>: <span style="color: #f6ad55;">1e-120</span>, <span style="color: #f6ad55;">'strong_force'</span>: <span style="color: #f6ad55;">5e-3</span>,
+    <span style="color: #f6ad55;">'gravity'</span>: <span style="color: #f6ad55;">1e-3</span>, <span style="color: #f6ad55;">'em_coupling'</span>: <span style="color: #f6ad55;">3e-3</span>,
+    <span style="color: #f6ad55;">'weak_force'</span>: <span style="color: #f6ad55;">1e-2</span>, <span style="color: #f6ad55;">'Higgs_vev'</span>: <span style="color: #f6ad55;">1e-34</span>,
+    <span style="color: #f6ad55;"># ... +25 more (neutrinos, quarks, etc)</span>
+}
+
+<span style="color: #48bb78;">n_params</span> = <span style="color: #f6ad55;">30</span>
+<span style="color: #48bb78;">windows</span> = <span style="color: #f6ad55;">np.array</span>(<span style="color: #f6ad55;">list</span>(<span style="color: #48bb78;">constants.values</span>())[:<span style="color: #48bb78;">n_params</span>])
+
+<span style="color: #48bb78;">n_trials</span> = <span style="color: #f6ad55;">10_000_000</span>  <span style="color: #9ca3af;"># 10M universes</span>
+<span style="color: #48bb78;">trials</span> = <span style="color: #f6ad55;">np.random.uniform</span>(<span style="color: #f6ad55;">0</span>, <span style="color: #f6ad55;">1</span>, (<span style="color: #48bb78;">n_trials</span>, <span style="color: #48bb78;">n_params</span>))
+<span style="color: #48bb78;">hits</span> = <span style="color: #f6ad55;">np.sum</span>(<span style="color: #f6ad55;">np.all</span>(<span style="color: #48bb78;">trials</span> &lt; <span style="color: #48bb78;">windows</span>, axis=<span style="color: #f6ad55;">1</span>))
+
+<span style="color: #4299e1;">print</span>(<span style="color: #f7fafc;">f</span><span style="color: #f7fafc;">"10M universes: </span>{hits}<span style="color: #f7fafc;"> life-permitting (0 expected)"</span>)
+        </pre>
+        <p style="color: #a0aec0; font-size: 13px; margin: 10px 0 0 0;">
+            <em>Your PC: "10M universes: 0 life-permitting" → 10²³⁰ proof!</em>
+        </p>
+    </div>
+
+    <!-- CHALLENGE + 20 -->
+<!--    <div style="background: #ffebee; padding: 30px; border-radius: 15px; border-left: 5px solid #f44336; text-align: center;">
+        <h3 style="color: #c62828; margin: 0 0 20px 0;">🎯 RUN 10M UNIVERSES NOW</h3>
+        <ol style="color: #1e3a8a; font-size: 18px; text-align: left; max-width: 500px; margin: 20px auto 0;">
+            <li><strong>Click → Copy Monte Carlo code</strong></li>
+            <li><strong>pip install numpy</strong></li>
+            <li><strong>python monte_carlo.py</strong></li>
+            <li><strong>Watch: "10M trials: 0 hits"</strong></li>
+        </ol>
+    </div>
+
+</div>
+</div> -->
+
+
+
+
+
+</div>
+</body>
+</html>
+    
+
